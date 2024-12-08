@@ -1,0 +1,138 @@
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1f5563;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+  z-index: 1000;
+  box-shadow: none;
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px; 
+}
+
+.Firstfooterrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  margin: 0 20px;
+  background-color: #1f5563;
+  width: 100%;
+}
+
+.insiderow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #246e77;
+  box-shadow: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  max-width: 380px;
+  min-width: 280px;
+  flex-grow: 1;
+  margin: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.insiderow:hover {
+  background-color: #0f3d4c;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+  color: white;
+}
+
+.insiderow p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.lastfooterrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+  padding: 0 20px;
+  width: 100%;
+  background-color: #1f5563 !important;
+  border-radius: 10px; 
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 40px;
+}
+
+.lastfooterrow > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  max-width: 600px;
+}
+
+.lastfooterrow p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 300;
+}
+
+p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .Firstfooterrow {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .insiderow {
+    width: 90%;
+    max-width: none;
+    padding: 15px;
+    background-color: #246e77;
+    border-radius: 10px;
+  }
+
+  .insiderow .icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  .lastfooterrow {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .logo {
+    margin: 0 auto 10px;
+    height: 60px;
+  }
+
+  .lastfooterrow > div:nth-child(2) {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .lastfooterrow p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}

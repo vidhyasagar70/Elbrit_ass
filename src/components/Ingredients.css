@@ -1,0 +1,138 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem; 
+  justify-items: center;
+}
+
+.first-row {
+  grid-template-columns: repeat(3, minmax(270px, 1fr)); 
+}
+
+.second-row {
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+
+.ingredient-item {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px; 
+}
+
+.first-row .ingredient-item {
+  max-width: 380px; 
+}
+
+.ingredient-item:last-child {
+  max-width: 240px; 
+}
+
+.ingredient-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+}
+
+.img-container {
+  position: relative;
+  background: #f8f8f8;
+  padding: 0; 
+  overflow: hidden; 
+  height: 100%; 
+}
+
+.ingredient-img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+  width: calc(100% - 2rem); 
+  margin: 0 auto 1rem auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 1024px) {
+  .first-row {
+    grid-template-columns: repeat(2, minmax(220px, 1fr)); 
+  }
+
+  .second-row {
+    grid-template-columns: repeat(3, minmax(180px, 1fr)); 
+  }
+
+  .ingredient-item:last-child {
+    max-width: 220px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .first-row,
+  .second-row {
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); 
+    gap: 1.2rem;
+  }
+
+  .ingredient-item {
+    max-width: 280px;
+  }
+
+  .first-row .ingredient-item {
+    max-width: 320px; 
+  }
+
+  .ingredient-item:last-child {
+    max-width: 240px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .first-row,
+  .second-row {
+    grid-template-columns: 1fr; 
+  }
+
+  .ingredient-item {
+    max-width: 100%; 
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

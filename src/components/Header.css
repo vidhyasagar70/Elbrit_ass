@@ -1,0 +1,29 @@
+
+.header-elbrit {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-elbrit-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-elbrit-logo {
+    display: block;
+    margin-left: 0;
+    height: 50px;
+    width: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .header-elbrit-container {
+      justify-content: center;
+    }
+  
+    .header-elbrit-logo {
+      height: 40px;
+    }
+  }
+  

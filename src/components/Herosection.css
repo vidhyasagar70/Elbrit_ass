@@ -1,0 +1,73 @@
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9; 
+    padding: 0;
+    margin: 0 15px; 
+  }
+  
+ 
+  .hero-container {
+    position: relative; 
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden; 
+  }
+  
+ 
+  .vita {
+    width: 110%; 
+    max-width: 1150px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+  }
+  
+ 
+  .vita2 {
+    position: absolute; 
+    bottom: -15px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 55%; 
+    max-width: 600px; 
+    height: auto; 
+  }
+  
+
+  @media (max-width: 1024px) {
+    .hero-container {
+      padding: 0 10px; 
+    }
+  
+    .vita {
+      width: 100%; 
+      max-width: 100%; 
+    }
+  
+    .vita2 {
+      width: 60%; 
+      bottom: -10px; 
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero {
+      margin: 0 10px; 
+    }
+  
+    .vita {
+      width: 100%; 
+      max-width: none; 
+    }
+  
+    .vita2 {
+      width: 70%; 
+      bottom: -5px; 
+    }
+  }
+  
